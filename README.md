@@ -40,3 +40,25 @@ Add this line (example):
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
+
+
+### Footer
+The website includes a footer with:
+- Version number (v1.0)
+- Deploy date (generated dynamically via JavaScript)
+- Author name
+
+#### Implementation
+```html
+<footer>
+  <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Student Name</p>
+  <script>
+    // JavaScript to generate current date
+    const months = ['Jan', 'Feb', 'Mar', ...];
+    const today = new Date();
+    // ... date formatting logic
+  </script>
+</footer>
+```
+
+The deploy date automatically reflects the current date when the page loads.
