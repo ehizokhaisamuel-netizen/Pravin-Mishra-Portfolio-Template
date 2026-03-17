@@ -36,22 +36,22 @@ Original:
 Add this line (example):
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+<p><strong>Deployed by:</strong> DMI Cohort 2 | Samuel Ehizokhai | Group 2 | Week 1 | 17-03-2026</p>
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
 
 
 ### Footer
-The website includes a footer with:
-- Version number (v1.0)
-- Deploy date (generated dynamically via JavaScript)
-- Author name
+There is a footer requirement to make the date dynamic
+To do this, I replaced the hardcoded date with a span tag that has a unique ID.
+Then, I added the JavaScript by telling the browser to grab today's date and "inject" it into that span.
+I added this script right before the closing </body> tag (usually at the very bottom of your index.html).
 
 #### Implementation
 ```html
 <footer>
-  <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Student Name</p>
+  <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Samuel Ehizokhai</p>
   <script>
     // JavaScript to generate current date
     const months = ['Jan', 'Feb', 'Mar', ...];
